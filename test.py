@@ -8,9 +8,8 @@ from PIL import Image
 try: 
    img  = Image.open("./tv.png") 
    st.set_page_config(page_title = "Watch's Next ?",page_icon=img)
-except IOError :
-    pass  
-    #  st.set_page_config(page_title = "Watch's Next ?")
+except IOError :  
+   st.set_page_config(page_title = "Watch's Next ?")
 #<a target="_blank" href="https://icons8.com/icon/115361/tv">Television</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 st.title("Movie Recommendation System")
 movies_list=pd.read_pickle('movies.pkl')
