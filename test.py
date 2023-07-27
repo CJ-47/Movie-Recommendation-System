@@ -3,6 +3,8 @@ import pickle
 import requests
 import pandas as pd
 from PIL import Image
+
+st.set_page_config(page_title = "Watch's Next ?")
 try: 
     img  = Image.open("tv.png") 
     st.set_page_config(page_title = "Watch's Next ?",page_icon=img)
